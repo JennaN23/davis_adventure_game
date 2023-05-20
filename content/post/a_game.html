@@ -1,17 +1,32 @@
+---
+title: "Mission 0"
+date: 2023-05-20T12:59:53-07:00
+description: "first mission"
+tags: []
+categories: []
+---
+
 <!DOCTYPE html>
-<html>
-<head>
-<title>Davis Adventure Game</title>
-</head>
-<body>
+	<html>
+		<head>
+			<title>Mission 1</title>
+		</head>
+		    <script>
+    			function checkanswer(){
+				document.body.innerHTML += '<button onclick="window.location.href = \'../hidden_post/mission1.html';">Next Riddle</button>'
+				//NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
 
-<h1>Welcome to UC Davis!!</h1>
-<p>An ominous fog has been rolling over the UC Davis campus.</p>
-<p>You have been selected to complete missions in order to investigate and defeat the fog.</p>
-
-<button type="button" onclick="document.getElementById('demo').innerHTML='Mission 1: Hutchinson Field/ARC'">Begin!</button>
-
-<p id="demo"></p>
-
-</body>
-</html>
+    		}
+    </script>
+		
+		<body>
+			<h1>Welcome to UC Davis!!</h1>
+			<p>An ominous fog has been rolling over the UC Davis campus.</p>
+			<p>You have been selected to complete missions in order to investigate and defeat the fog.</p>
+			
+			<form>
+  			
+  			<input type="submit" value="Check" onClick="checkanswer()">
+			</form>
+		</body>
+	</html>
