@@ -1,5 +1,9 @@
 # Mission 1
 
+<button type="button" onclick="document.getElementById('demo').innerHTML='Mission 1: Hutchinson Field/ARC'">Begin!</button>
+
+<p id="demo"></p>
+
 “You have arrived at the first site of inspection. Here we must figure out the direction from which the fog originates.” 
 We should add something about the ARC. Information for the freshmen loool
 
