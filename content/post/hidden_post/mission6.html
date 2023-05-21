@@ -1,6 +1,6 @@
 ---
 title: "Mission 6"
-date: 2023-05-20T12:59:53-07:00
+date: d
 description: "mission 6: MU"
 tags: []
 categories: []
@@ -9,13 +9,16 @@ categories: []
 <!DOCTYPE html>
 	<html>
 		<head>
-			<title>Mission 6</title>
+			<title>Mission 6: Memorial Union</title>
 		</head>
+			<p id="demo">
 		    <script>
+		    	const d = new Date()
+		    	document.getElementById("demo").innerHTML = d
     			function checkanswer(){
         		input = document.querySelector('[name="pass1"]').value
         		
-        		correct = "MEMORIAL UNION"
+        		correct = "WELLMAN"
 
         		if (input.length === 0 || correct.length === 0) {
             		alert("You must enter an answer to continue...");
@@ -33,20 +36,24 @@ categories: []
 
     		}
     </script>
-		
 		<body>
-			<h1>Mission6</h1>
+			<h1>Mission 6: Memorial Union</h1>
 			<p> “Welcome to the Memorial Union, the hub of Davis. If you’re feeling peckish, you can grab a coffee, pizza, sushi, pho, and more. Conveniently, there’s a Credit Union on the second floor, but the real fun begins in the basement. If you approach from the North (where all the buses are), between the Bookstore and the Lobby/Study Area you’ll find a door that leads you down a flight of stairs. In this basement is a BOWLING ALLEY and Games Area!! I am not kidding, there really is a bowling alley down there! There are also board games, billiards (pool), and video games (both pc and console)."
 			<br>
 			<br>
-			“That seems like a great place to destress from all the fog! In the spirit of games, here’s one that will reveal the final location!”
+			“That seems like a great place to destress from all the fog! In the spirit of games, here’s a riddle that will reveal the final location!”
 			<br>
 			</br>
 			<a href="URL">https://memorialunion.ucdavis.edu/</a> 
 			</br>
 			</br>
+			Riddle: I am both filled and emptied. The more items thrown at me, the richer I get. I am a placeholder. I am a state of being. Add man and we are a portmanteau. What is our name?
 			</p>
-
+			<br>
+			<button type="button" onClick="document.getElementById('demo').innerHTML = '_ _ _ _ M A N'">Hint #1</button>
+			<button type="button" onClick="document.getElementById('demo').innerHTML = 'W _ _ L M A N'">Hint #2</button>
+			</br>
+			<br></br>
 			<form>
   			<label for="pass1">Clue:</label><br>
   			<input type="text" id="pass1" name="pass1"><br>
