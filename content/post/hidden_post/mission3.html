@@ -22,13 +22,14 @@ categories: []
         		input = document.querySelector('[name="pass1"]').value
         		
         		correct = "LIBRARY"
+			alsocorrect = "SHIELDS LIBRARY"
 
         		if (input.length === 0) {
             		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
-        		if (input.toUpperCase() === correct) {
+        		if (input.toUpperCase() === correct||input.toUpperCase() === alsocorrect) {
             		alert("This appears to be correct...");
             		document.body.innerHTML += '<button onclick="window.location.href = \'../mission4\';">Next Mission</button>'
         		} else {
@@ -39,8 +40,9 @@ categories: []
     </script>
 		
 		<body>
-			<p> Here we are at the Student Community Center, a building through which students often bustle around due to the vast resources it houses. Here, you can find the <a href="https://ccc.ucdavis.edu/">Cross Cultural Center</a> and the  <a href="https://urc.ucdavis.edu/">Undergraduate Research Center</a> which can enrich your student experience. You can also find various study locations here for all the group study sessions that I am sure you will be having along with some coffee from the CoHo to keep you awake! However, with this dense fog over campus, there’s not another soul in sight…be brave, I have faith in your success!
-
+			<p> Here we are at the Student Community Center, a building through which students often bustle around due to the vast resources it houses. Here, you can find the <a href="https://ccc.ucdavis.edu/">Cross Cultural Center</a>, the <a href="https://lgbtqia.ucdavis.edu/">LGBTQIA Resource Center</a>, and the  <a href="https://urc.ucdavis.edu/">Undergraduate Research Center</a> which can enrich your student experience. You can also find various study locations here for all the group study sessions that I am sure you will be having along with some coffee from the CoHo to keep you awake! However, with this dense fog over campus, there’s not another soul in sight…be brave, I have faith in your success!
+			<a href="URL">https://studentaffairs.ucdavis.edu/resources/scc</a>
+			<br>
 			<br>
 			<br>
 			Looking up, you see the dark fog creeping eerily close, you notice a strange image painted on the large glass windows of the building. It almost looks like a…circle? No…maybe an egg? Looks almost like an egg reading a book. With this clue, you begin to cautiously move in the direction opposite to the fog, keeping an eye out for a giant egg focused on an open book that is renowned for giving good luck to students prior to exams.

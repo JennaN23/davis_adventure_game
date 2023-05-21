@@ -25,13 +25,14 @@ categories: []
         		input = document.querySelector('[name="pass1"]').value
         		
         		correct = "WELLMAN"
+			alsocorrect = "WELLMAN HALL"
 
         		if (input.length === 0) {
             		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
-        		if (input.toUpperCase() === correct) {
+        		if (input.toUpperCase() === correct||input.toUpperCase() ===alsocorrect) {
             		alert("This appears to be correct...");
             		document.body.innerHTML += '<button onclick="window.location.href = \'../mission7\';">Next Mission</button>'
         		} else {
