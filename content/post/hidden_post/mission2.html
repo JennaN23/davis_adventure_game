@@ -16,14 +16,14 @@ categories: []
     			function checkanswer(){
         		input = document.querySelector('[name="pass2"]').value
         		
-        		correct = "Student Community Center"
+        		correct = "STUDENT COMMUNITY CENTER"
 
-        		if (input.length === 0 || correct.length === 0) {
+        		if (input.length === 0) {
             		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
-        		if (input === correct) {
+        		if (input.toUpperCase() === correct) {
             		alert("This appears to be correct...");
             		document.body.innerHTML += '<button onclick="window.location.href = \'../mission3\';">Next Riddle</button>'
         		} else {
