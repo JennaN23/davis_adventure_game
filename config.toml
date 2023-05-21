@@ -1,8 +1,6 @@
 baseURL = 'http://saisuresh2.github.io/davis_adventure_game/'
 languageCode = 'en-us'
 title = 'Davis Adventure Game'
-theme = 'Hugo.386'
-publishDir = "docs"
 
 [module]
     [[module.imports]]
