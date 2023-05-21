@@ -11,7 +11,7 @@ theme = 'Hugo.386'
     mainpagesubtitle = "Welcome to Davis!" 
 
     # The description of your website. It will be displayed in the home page
-    mainpagedesc = "Explore Davis, Have fun! "
+    mainpagedesc = "Have fun exploring Davis and remember to stay safe! "
 
     # The name to display in the copyright section in the footer
     copyrightname = "tbd"
@@ -23,11 +23,7 @@ theme = 'Hugo.386'
     showhugo = true
 
     # Urls for social networks
-    facebook = "https://facebook.com"
-    twitter = "https://twitter.com"
-    linkedin = "https://linkedin.com"
-    github = "https://github.com"
-    gitlab = "https://gitlab.com"
+    github = "https://github.com/JennaN23/davis_adventure_game/tree/main"
 
     # Enables or disables the loading animations. false activates them. Default is false.
     loadfastload = false
