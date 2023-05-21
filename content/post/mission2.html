@@ -1,11 +1,14 @@
 ---
 title: "Mission 2"
 date: 2023-05-20T12:59:53-07:00
-description: "The Silo"
+<<<<<<< HEAD:content/post/hidden_post/mission2.html
+description: "second mission"
+=======
+description: ""
+>>>>>>> 3f767f5280a52dfd7156eb93ba4cee04677e7851:content/post/mission2.html
 tags: []
 categories: []
 ---
-
 
 <!DOCTYPE html>
 	<html>
@@ -14,7 +17,7 @@ categories: []
 		</head>
 		    <script>
     			function checkanswer(){
-        		input = document.querySelector('[name="pass2"]').value
+        		input = document.querySelector('[name="pass1"]').value
         		
         		correct = "Student Community Center"
 
@@ -25,7 +28,7 @@ categories: []
 
         		if (input === correct) {
             		alert("This appears to be correct...");
-            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission3\';">Next Riddle</button>'
+            		document.body.innerHTML += '<button onclick="window.location.href = \'mission3.html\';">Next Riddle</button>'
         		} else {
             		alert("No, this doesn't even make sense...");
        			 }
