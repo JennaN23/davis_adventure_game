@@ -1,5 +1,5 @@
 ---
-title: "Mission 7 continued"
+title: "Mission Finale"
 date: 2023-05-20T12:59:53-07:00
 description: "Wellman Hall"
 tags: []
@@ -17,32 +17,27 @@ categories: []
         		
         		correct = "AGGIES"
 
-        		if (input.length === 0 || correct.length === 0) {
-            		alert("You must enter an answer to continue...");
+        		if (input.length === 0) {
+            		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
         		if (input.toUpperCase() === correct) {
-            		alert("Winner winner, chicken dinner!");
-            		document.body.innerHTML += '<button onclick="window.location.href = \'mission7.html\';">Next Riddle</button>'
-            		//NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+            		alert("This appears to be correct...");
+            		document.body.innerHTML += '<button onclick="window.location.href = \'mission7.html\';">Next Mission</button>'
         		} else {
-            		alert("Wrong answer, please, keep trying...");
-            		//NOTE: here the button must be disabled
+            		alert("No, this doesn't even make sense...");
        			 }
 
     		}
     </script>
 		
 		<body>
-			<h1>Mission 7</h1>
 			<p> <Strong>The fog has consumed you. Just as it seems all hope has been lost, you find a computer screen lighting up the center of the room.</Strong>
 			<br></br>
-			It reads: PASSWORD:_
+			A transmission from your superior is cut off, however a partial message is received. It reads: "We have received a transmission from Gunrock, our fog specialist. It appears the fog can be remotely shut down by entering a keyword that activates the emergency shutdown. We believe the keyword is–
 			<br></br>
-			“A transmission from your superior is cut off, however a partial message is received. It reads: We have received a transmission from Gunrock, our fog specialist. It appears the fog can be remotely shut down by entering a keyword that activates the emergency shutdown. We believe the keyword is–”
-			<br></br>
-			The headquarters of your organization has been infiltrated by the fog workers. All transmissions have been cut off. You now are faced with two options: figuring out the keyword through your deductive reasoning skills, or defeating the fog’s head boss in a game of . Be careful, if you get the keyword wrong.. Something terrible could happen.”
+			The headquarters of your organization has been infiltrated by the fog workers. All transmissions have been cut off. You now are faced with one option: figuring out the keyword through your deductive reasoning skills. Be careful, if you get the keyword wrong.. Something terrible could happen.
 			<br></br>
 			</p>
 
@@ -51,9 +46,5 @@ categories: []
   			<input type="text" id="pass1" name="pass1"><br>
   			<input type="submit" value="Check" onClick="checkanswer()">
 			</form>
-			
-			<img src="/img/turkey_dinner.png" alt="yum" style="width:200px;height:200px;">
-			
 		</body>
 	</html>
-
