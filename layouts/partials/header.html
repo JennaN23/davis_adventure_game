@@ -1,3 +1,13 @@
+{{define "main"}}
+{{$p := where .RegularPages.ByDate "Params.ignore" "!=" true }}
+{{$paginator := .Paginate $p}}
+{{range $paginator.Pages }}
+<p><a href="{{.RelPermalink}}">{{.Title}}</a></p>
+<p>{{.PublishDate.Format "2 January 2006"}}</p>
+{{end}}
+{{template "_internal/pagination.html" .}}
+{{end}}
+
 <!-- Navbar
 ================================================== -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -37,3 +47,4 @@
         </div>
     </div>
 </nav>
+

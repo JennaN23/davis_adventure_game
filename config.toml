@@ -33,10 +33,10 @@ theme = 'Hugo.386'
     loadfastload = false
 
     # Sets the speed for the page loading effect. Default is 1.0.
-    loadspeedfactor = 1.0
+    loadspeedfactor = 2.0
 
     # Enables or disables the second flyby cursor. Default is false.
-    loadonepass = false
+    loadonepass = true
 
 [params.copyright]
     name = "JM Fergeau"
