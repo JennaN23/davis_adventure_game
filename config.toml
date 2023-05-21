@@ -2,6 +2,12 @@ baseURL = 'http://saisuresh2.github.io/davis_advernture_game/'
 languageCode = 'en-us'
 title = 'Davis Adventure Game'
 theme = 'Hugo.386'
+publishDir = "docs"
+
+[module]
+    [[module.imports]]
+      path = "gitlab.com/jmfergeau/hugo.386"
+
 
 [params]
     # The name to display as main title in the home page
