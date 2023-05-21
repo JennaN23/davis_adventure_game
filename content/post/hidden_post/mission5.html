@@ -1,56 +1,68 @@
 ---
 title: "Mission 5"
 date: 2023-05-20T12:59:53-07:00
-description: "mission 5: Death Star"
+description: "Death Star"
 tags: []
 categories: []
 ---
 
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Mission 5</title>
-		</head>
-		    <script>
-    			function checkanswer(){
-        		input = document.querySelector('[name="pass1"]').value
-        		
-        		correct = "MEMORIAL UNION"
+    <html>
+   	 <head>
+   		 <title>Mission 5</title>
+   	 </head>
+   	 	<script>
+   			 function checkanswer(){
+   			 input = document.querySelector('[name="pass1"]').value
+   			 
+   			 correct = "MEMORIAL UNION"
 
-        		if (input.length === 0 || correct.length === 0) {
-            		alert("You must enter an answer to continue...");
-            		return false;
-       		 	}
+   			 if (input.length === 0) {
+       			 alert("Alas, this answer is much too short...");
+       			 return false;
+  			      }
 
-        		if (input.toUpperCase() === correct) {
-            		alert("CONGRATULATIONS! Your answer is correct! May the Force be with you as you advance to the next level.");
-            		document.body.innerHTML += '<button onclick="window.location.href = \'mission6.html\';">Next Riddle</button>'
-            		//NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
-        		} else {
-            		alert("Wrong answer, please, keep trying...");
-            		//NOTE: here the button must be disabled
-       			 }
+   			 if (input.toUpperCase() === correct) {
+       			 alert("This appears to be correct... May the Force be with you as you advance to the next level");
+       			 document.body.innerHTML += '<button onclick="window.location.href = \'../mission6\';">Next Mission</button>'
+   			 } else {
+       			 alert("No, this doesn't even make sense...");
+  				  }
 
-    		}
-    </script>
-		
-		<body>
-			<h1>Mission 5: The Death Star</h1>
-			<p> “Great job making it this far! The force is certainly with you… But good luck navigating the chaos that is the Social Sciences and Humanities Building, more commonly referred to as the Death Star. Notorious for making students late for class, the Death Star’s lawless, maze-like architecture and unconventional numbering system confuses everyone. If you’re lucky enough to have a class here, be sure to set time aside to physically find the classroom.”
-			<br>
-			</br>
-			<p> As you stand in the Death Star, gaping at the majestic, stony exterior, you hear a low rumble echoing throughout its halls. An ominous fear creeps over, imbuing you with the need to jump to hyperspace and get the hell out of here!</p>
+   		 }
+	</script>
+   	 
+   	 <body>
+   		 <p> Great job making it this far! The force is certainly with you… But good luck navigating the chaos that is the Social Sciences and Humanities Building, more commonly referred to as the Death Star. Notorious for making students late for class, the Death Star’s lawless, maze-like architecture and unconventional numbering system confuses everyone. If you’re lucky enough to have a class here, be sure to set time aside to physically find the classroom.
+   		 <br>
+   		 <p>As you stand in the Death Star, gaping at the majestic, stony exterior, you hear a low rumble echoing throughout its halls. An ominous fear creeps over, imbuing you with the need to jump to hyperspace and get the hell out of here!</p>
+   		 OH NO, it seems like the fog is creeping up from the lower levels! I’ve got a bad feeling about this…
+   		 </br>
+   		 <br>
+   		 In order to escape, we need to unscramble the name of the next location!
+   		 </br>
+   		 <br></br>
+   		 <label for="pass1">Clue: LOMMAREI NOUNI</label><br>
+   		 </p>
+   		 <form>
+     		 <input type="text" id="pass1" name="pass1"><br>
+     		 <input type="submit" value="Check" onClick="checkanswer()">
+   		 </form>
+   	 </body>
+    </html>
 
-			<p>“OH NO, it seems like the fog is creeping up from the lower levels! I’ve got a bad feeling about this…”</p>
-			</br>
-			“In order to escape, we need to unscramble the name of the next location!”
-			</br>
-			<br></br>
-			<label for="pass1">Clue: LOMMAREI NOUNI</label><br>
-			</p>
-			<form>
-  			<input type="text" id="pass1" name="pass1"><br>
-  			<input type="submit" value="Check" onClick="checkanswer()">
-			</form>
-		</body>
-	</html>
+<figure>
+	<figcaption>A banging soundtrack: </figcaption>
+	<audio
+    	controls
+    	src="/img/John Williams-The Imperial March from The Empire Strikes Back Audio.mp3">
+        	<a href="/img/John Williams-The Imperial March from The Empire Strikes Back Audio.mp3">
+            	Download audio
+        	</a>
+	</audio>
+</figure>
+
+<img src="/img/cow.png" alt="a big ol cow" style="width:200px;height:200px;">
+
+
+
