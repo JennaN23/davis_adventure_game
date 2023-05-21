@@ -1,0 +1,59 @@
+---
+title: "Mission 2"
+date: 2023-05-20T12:59:53-07:00
+description: "The Silo"
+tags: []
+categories: []
+---
+
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Mission 2</title>
+		</head>
+		    <script>
+    			function checkanswer(){
+        		input = document.querySelector('[name="pass2"]').value
+        		
+        		correct = "STUDENT COMMUNITY CENTER"
+
+        		if (input.length === 0) {
+            		alert("Alas, this answer is much too short...");
+            		return false;
+       		 	}
+
+        		if (input.toUpperCase() === correct) {
+            		alert("This appears to be correct...");
+            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission3\';">Next Riddle</button>'
+        		} else {
+            		alert("No, this doesn't even make sense...");
+       			 }
+
+    		}
+    </script>
+		
+		<body>
+			<h1>Mission 2</h1>
+			<p> Wow! You have a knack... for reading. Well done. Now the real work starts. 
+			The fog appears to be coming from a certain hall on campus. 
+			But, first, make sure you are drinking lots of water and have eaten enough. 
+			These missions can be very tiring, and you cannot work on low energy. 
+			<br>
+			<br/>
+			Here at the Silo, there are often various food trucks, restaurants, and even a market.
+			The local cows have asked me to relay a message to you regarding their observations. 
+			They have seen the fog workers moving around in secret throughout the day, and they seem to have left breadcrumbs on their trail.
+		    A note was found by the cow leader during peace negotiations with the horses... It reads
+			<br>
+			</br>
+			Entstud Munitycom Tercen
+			</p>
+			
+			<form>
+  			<label for="pass2">Decipher the text to continue:</label><br>
+  			<input type="text" id="pass2" name="pass2"><br>
+  			<input type="submit" value="Check" onClick="checkanswer()">
+			</form>
+		</body>
+	</html>
