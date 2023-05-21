@@ -11,22 +11,20 @@ categories: []
 		<head>
 			<title>Mission 7</title>
 		</head>
-
-
-
-
+		
+		<script>
+		function continue(){
+			 alert("Working!")
+			document.body.innerHTML += '<button>Enter</button>'
+		}
+		</script>
+	
 		<body>
 			<h1>Mission 7</h1>
 			<p> “OH No! As soon as you walk through the doors you smell something foul. Is it the cows? No, it must be something even worse… ”
 			<br>
 			</br>
-			<button onclick="{this.parentNode.style.display='none'}">Continue</button>
+			<button onclick="continue()">Continue</button>
 			</p>
-			<p>
-			The smell seems to be coming from the basement. Enter, if you dare
-			</p>
-			<br>
-			</br>
-			<button onclick="{this.parentNode.style.display='none'}">Enter</button>
 		</body>
 	</html>
