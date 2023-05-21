@@ -9,3 +9,4 @@ Davis Adventure Game is a text-based adventure game designed to guide new studen
 4. DEATH STAR
 5. MEMORIAL UNION
 6. WELLMAN HALL
+7. AGGIES
