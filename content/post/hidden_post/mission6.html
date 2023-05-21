@@ -17,7 +17,6 @@ categories: []
 				}
 			</style>
 		</head>
-			<p id="demo">
 		    <script>
 		    	const d = new Date()
 		    	document.getElementById("demo").innerHTML = d
@@ -34,7 +33,7 @@ categories: []
 
         		if (input.toUpperCase() === correct||input.toUpperCase() ===alsocorrect) {
             		alert("This appears to be correct...");
-            		document.body.innerHTML += '<button style="margin-bottom:70px; onclick="window.location.href = \'../mission7\';">Next Mission</button>'
+            		document.body.innerHTML += '<button style="margin-bottom:70px;" onclick="window.location.href = \'../mission7\';">Next Mission</button>'
         		} else {
             		alert("No, this doesn't even make sense...");
        			 }
@@ -56,7 +55,8 @@ categories: []
 			<br>
 			<button type="button" onClick="document.getElementById('demo').innerHTML = '_ _ _ _ M A N'">Hint #1</button>
 			<button type="button" onClick="document.getElementById('demo').innerHTML = 'W _ _ L M A N'">Hint #2</button>
-			</br>
+			<p></p>
+			<p id="demo">
 			<br></br>
 			<form>
   			<input type="text" id="pass1" name="pass1"><br>
@@ -64,6 +64,6 @@ categories: []
 			</form>
 		</body>
 	</html>
-<img class="contrast" src="/img/mu.jpg" alt="MU" style="width:600px;height:500px; margin: auto;">
+<img class="contrast" src="/img/mu.jpg" alt="MU" style="display:block; width:600px;height:500px; margin: auto;">
 <br></br>
 <img class="contrast" src="/img/squirrel_stamp.png" alt="the bane of my existence" style="width:200px;height:200px;">
