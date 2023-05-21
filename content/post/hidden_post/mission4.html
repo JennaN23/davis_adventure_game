@@ -1,7 +1,7 @@
 ---
 title: "Mission 4"
 date: 2023-05-20T12:59:53-07:00
-description: "mission 4: Library"
+description: "Shields Library"
 tags: []
 categories: []
 ---
@@ -17,29 +17,26 @@ categories: []
         		
         		correct = "DEATH STAR"
 
-        		if (input.length === 0 || correct.length === 0) {
-            		alert("You must enter an answer to continue...");
+        		if (input.length === 0) {
+            		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
         		if (input.toUpperCase() === correct) {
-            		alert("CONGRATULATIONS! Your answer is correct! You have advanced to the next level.");
-            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission5\';">Next Riddle</button>'
-            		//NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+            		alert("This appears to be correct...");
+            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission5\';">Next Mission</button>'
         		} else {
-            		alert("Wrong answer, please, keep trying...");
-            		//NOTE: here the button must be disabled
+            		alert("No, this doesn't even make sense...");
        			 }
 
     		}
     </script>
 		
 		<body>
-			<h1>Mission 4: The Library</h1>
-			<p> “Behold the famous UC Davis eggheads. The library is open from 7:30 to 12:00 am and here you can always find poor Ochem students with their nose in a book. If your desire to study is unusually strong, the 24-hour study rooms are the place for you.”
+			<p> Behold the famous UC Davis eggheads. The library is open from 7:30 to 12:00 am and here you can always find poor Ochem students with their nose in a book. If your desire to study is unusually strong, the 24-hour study rooms are the place for you.
 			<br>
 			<br>
-			“Here you must search for knowledge.. The knowledge of the final destination. We know that the fog originates from a hall on campus.. But which? The famous bookhead will offer you some insight.”
+			Here you must search for knowledge.. The knowledge of the final destination. We know that the fog originates from a hall on campus.. But which? The famous bookhead will offer you some insight.
 			</br>
 			<br>
 			Bookhead: "Humph"
@@ -47,10 +44,7 @@ categories: []
 			<br>
 			You walk into the library and hear an ominous breathing noise disturb the tranquil silence of students hard at work. It sounds awfully like a certain masked character who wields a lightsaber. There’s a certain building on campus whose name resembles his favored ship where he might be found … 
 			</br>
-			</br>
-			</br>
-			</br>
-			<label for="pass1"></label><br>
+			<label for="pass2"></label><br>
 			</p>
 			<form>
   			<input type="text" id="pass1" name="pass1"><br>

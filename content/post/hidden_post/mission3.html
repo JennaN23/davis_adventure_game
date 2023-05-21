@@ -1,7 +1,7 @@
 ---
 title: "Mission 3"
 date: 2023-05-20T12:59:53-07:00
-description: ""
+description: "SCC"
 tags: []
 categories: []
 ---
@@ -17,30 +17,27 @@ categories: []
         		
         		correct = "LIBRARY"
 
-        		if (input.length === 0 || correct.length === 0) {
-            		alert("You must enter an answer to continue...");
+        		if (input.length === 0) {
+            		alert("Alas, this answer is much too short...");
             		return false;
        		 	}
 
         		if (input.toUpperCase() === correct) {
-            		alert("CONGRATULATIONS! Your answer is correct! You have advanced to the next level.");
-            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission4\';">Next Riddle</button>'
-            		//NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+            		alert("This appears to be correct...");
+            		document.body.innerHTML += '<button onclick="window.location.href = \'../mission4\';">Next Mission</button>'
         		} else {
-            		alert("Wrong answer, please, keep trying...");
-            		//NOTE: here the button must be disabled
+            		alert("No, this doesn't even make sense...");
        			 }
 
     		}
     </script>
 		
 		<body>
-			<h1>Mission 3: Student Community Center</h1>
-			<p> “Here we are at the Student Community Center, a building through which students often bustle around due to the vast resources it houses. Here, you can find the <a href="https://ccc.ucdavis.edu/">Cross Cultural Center</a> and the  <a href="https://urc.ucdavis.edu/">Undergraduate Research Center</a> which can enrich your student experience. You can also find various study locations here for all the group study sessions that I am sure you will be having along with some coffee from the CoHo to keep you awake! However, with this dense fog over campus, there’s not another soul in sight…be brave, I have faith in your success!”
+			<p> Here we are at the Student Community Center, a building through which students often bustle around due to the vast resources it houses. Here, you can find the <a href="https://ccc.ucdavis.edu/">Cross Cultural Center</a> and the  <a href="https://urc.ucdavis.edu/">Undergraduate Research Center</a> which can enrich your student experience. You can also find various study locations here for all the group study sessions that I am sure you will be having along with some coffee from the CoHo to keep you awake! However, with this dense fog over campus, there’s not another soul in sight…be brave, I have faith in your success!
 
 			<br>
 			<br>
-			“Looking up, you see the dark fog creeping eerily close, you notice a strange image painted on the large glass windows of the building. It almost looks like a…circle? No…maybe an egg? Looks almost like an egg reading a book. With this clue, you begin to cautiously move in the direction opposite to the fog, keeping an eye out for a giant egg focused on an open book that is renowned for giving good luck to students prior to exams.”
+			Looking up, you see the dark fog creeping eerily close, you notice a strange image painted on the large glass windows of the building. It almost looks like a…circle? No…maybe an egg? Looks almost like an egg reading a book. With this clue, you begin to cautiously move in the direction opposite to the fog, keeping an eye out for a giant egg focused on an open book that is renowned for giving good luck to students prior to exams.
 			<br>			
 			</br>
 			</br>
