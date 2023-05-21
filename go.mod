@@ -1,3 +1,3 @@
-module Hugo.386
+module hugo386
 
 go 1.19
