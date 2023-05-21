@@ -1,4 +1,5 @@
 baseURL = 'http://saisuresh2.github.io/davis_adventure_game/'
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'Davis Adventure Game'
 
